@@ -7,6 +7,7 @@
 //
 
 #import "ZAAppDelegate.h"
+#import "ZAShareManager.h"
 
 @implementation ZAAppDelegate
 
@@ -43,4 +44,14 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return [[ZAShareManager sharedManager] handleOpenURL:url];
+}
+
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [[ZAShareManager sharedManager] handleOpenUrl:url sourceApplication:sourceApplication annotation:annotation];
+}
 @end

@@ -22,6 +22,12 @@
 		644B19E8193437E80019B8CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644B19C7193437E70019B8CB /* UIKit.framework */; };
 		644B19F0193437E80019B8CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 644B19EE193437E80019B8CB /* InfoPlist.strings */; };
 		644B19F2193437E80019B8CB /* ZAShareKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 644B19F1193437E80019B8CB /* ZAShareKitTests.m */; };
+		644B1A02193438800019B8CB /* ZAShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 644B19FF193438800019B8CB /* ZAShareManager.m */; };
+		644B1A03193438800019B8CB /* ZAWeixinController.m in Sources */ = {isa = PBXBuildFile; fileRef = 644B1A01193438800019B8CB /* ZAWeixinController.m */; };
+		644B1A06193439510019B8CB /* ZASinaWeiboController.m in Sources */ = {isa = PBXBuildFile; fileRef = 644B1A05193439510019B8CB /* ZASinaWeiboController.m */; };
+		644B1A101934396B0019B8CB /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 644B1A091934396B0019B8CB /* libWeiboSDK.a */; };
+		644B1A111934396B0019B8CB /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 644B1A0A1934396B0019B8CB /* WeiboSDK.bundle */; };
+		644B1A121934396B0019B8CB /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 644B1A0D1934396B0019B8CB /* libWeChatSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,19 @@
 		644B19ED193437E80019B8CB /* ZAShareKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZAShareKitTests-Info.plist"; sourceTree = "<group>"; };
 		644B19EF193437E80019B8CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		644B19F1193437E80019B8CB /* ZAShareKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAShareKitTests.m; sourceTree = "<group>"; };
+		644B19FD193438800019B8CB /* IShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IShare.h; sourceTree = "<group>"; };
+		644B19FE193438800019B8CB /* ZAShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAShareManager.h; sourceTree = "<group>"; };
+		644B19FF193438800019B8CB /* ZAShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAShareManager.m; sourceTree = "<group>"; };
+		644B1A00193438800019B8CB /* ZAWeixinController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAWeixinController.h; sourceTree = "<group>"; };
+		644B1A01193438800019B8CB /* ZAWeixinController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAWeixinController.m; sourceTree = "<group>"; };
+		644B1A04193439510019B8CB /* ZASinaWeiboController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZASinaWeiboController.h; sourceTree = "<group>"; };
+		644B1A05193439510019B8CB /* ZASinaWeiboController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZASinaWeiboController.m; sourceTree = "<group>"; };
+		644B1A091934396B0019B8CB /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		644B1A0A1934396B0019B8CB /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		644B1A0B1934396B0019B8CB /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		644B1A0D1934396B0019B8CB /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		644B1A0E1934396B0019B8CB /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		644B1A0F1934396B0019B8CB /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +84,8 @@
 				644B19C6193437E70019B8CB /* CoreGraphics.framework in Frameworks */,
 				644B19C8193437E70019B8CB /* UIKit.framework in Frameworks */,
 				644B19C4193437E70019B8CB /* Foundation.framework in Frameworks */,
+				644B1A101934396B0019B8CB /* libWeiboSDK.a in Frameworks */,
+				644B1A121934396B0019B8CB /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +105,9 @@
 		644B19B7193437E70019B8CB = {
 			isa = PBXGroup;
 			children = (
+				644B19FC193438800019B8CB /* Lib */,
 				644B19C9193437E70019B8CB /* ZAShareKit */,
+				644B1A071934396B0019B8CB /* ThirdPart */,
 				644B19EB193437E80019B8CB /* ZAShareKitTests */,
 				644B19C2193437E70019B8CB /* Frameworks */,
 				644B19C1193437E70019B8CB /* Products */,
@@ -153,6 +176,49 @@
 				644B19EE193437E80019B8CB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		644B19FC193438800019B8CB /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				644B19FD193438800019B8CB /* IShare.h */,
+				644B19FE193438800019B8CB /* ZAShareManager.h */,
+				644B19FF193438800019B8CB /* ZAShareManager.m */,
+				644B1A00193438800019B8CB /* ZAWeixinController.h */,
+				644B1A01193438800019B8CB /* ZAWeixinController.m */,
+				644B1A04193439510019B8CB /* ZASinaWeiboController.h */,
+				644B1A05193439510019B8CB /* ZASinaWeiboController.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		644B1A071934396B0019B8CB /* ThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+				644B1A081934396B0019B8CB /* SinaWeibo */,
+				644B1A0C1934396B0019B8CB /* WeixinSDK */,
+			);
+			path = ThirdPart;
+			sourceTree = "<group>";
+		};
+		644B1A081934396B0019B8CB /* SinaWeibo */ = {
+			isa = PBXGroup;
+			children = (
+				644B1A091934396B0019B8CB /* libWeiboSDK.a */,
+				644B1A0A1934396B0019B8CB /* WeiboSDK.bundle */,
+				644B1A0B1934396B0019B8CB /* WeiboSDK.h */,
+			);
+			path = SinaWeibo;
+			sourceTree = "<group>";
+		};
+		644B1A0C1934396B0019B8CB /* WeixinSDK */ = {
+			isa = PBXGroup;
+			children = (
+				644B1A0D1934396B0019B8CB /* libWeChatSDK.a */,
+				644B1A0E1934396B0019B8CB /* WXApi.h */,
+				644B1A0F1934396B0019B8CB /* WXApiObject.h */,
+			);
+			path = WeixinSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +300,7 @@
 			files = (
 				644B19DA193437E80019B8CB /* Main_iPad.storyboard in Resources */,
 				644B19DF193437E80019B8CB /* Images.xcassets in Resources */,
+				644B1A111934396B0019B8CB /* WeiboSDK.bundle in Resources */,
 				644B19D7193437E80019B8CB /* Main_iPhone.storyboard in Resources */,
 				644B19CE193437E70019B8CB /* InfoPlist.strings in Resources */,
 			);
@@ -254,9 +321,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				644B1A02193438800019B8CB /* ZAShareManager.m in Sources */,
 				644B19DD193437E80019B8CB /* ZAViewController.m in Sources */,
+				644B1A06193439510019B8CB /* ZASinaWeiboController.m in Sources */,
 				644B19D0193437E70019B8CB /* main.m in Sources */,
 				644B19D4193437E70019B8CB /* ZAAppDelegate.m in Sources */,
+				644B1A03193438800019B8CB /* ZAWeixinController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +464,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZAShareKit/ZAShareKit-Prefix.pch";
 				INFOPLIST_FILE = "ZAShareKit/ZAShareKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdPart/SinaWeibo",
+					"$(PROJECT_DIR)/ThirdPart/WeixinSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -407,6 +484,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZAShareKit/ZAShareKit-Prefix.pch";
 				INFOPLIST_FILE = "ZAShareKit/ZAShareKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdPart/SinaWeibo",
+					"$(PROJECT_DIR)/ThirdPart/WeixinSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

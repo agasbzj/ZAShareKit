@@ -7,6 +7,9 @@
 //
 
 #import "ZAViewController.h"
+#import "ZAShareManager.h"
+#import "ZASinaWeiboController.h"
+#import "ZAWeixinController.h"
 
 @interface ZAViewController ()
 
@@ -24,6 +27,19 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)shareToSinaWeibo:(id)sender {
+    ZASinaWeiboController *impl = [[ZASinaWeiboController alloc] init];
+    [[ZAShareManager sharedManager] shareToTimelineWithShareImpl:impl text:@"Test Weibo" image:nil onFinish:^(BOOL success, id userInfo) {
+        NSLog(@"Share Result:%i", success);
+    }];
+}
+
+- (IBAction)shareToWXTimeLine:(id)sender {
+}
+
+- (IBAction)shareToWXFriend:(id)sender {
 }
 
 @end
